@@ -39,7 +39,7 @@ namespace Algorithm
 
         private static void GetLengthOfLongestSubstring()
         {
-            string string1 = "pwwkew";
+            string string1 = "abcabcbb";
 
             int result = LengthOfLongestSubstringSolution.LengthOfLongestSubstring(string1);
         }

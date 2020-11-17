@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Algorithm.LengthOfLongestSubstringAlgorithm
 {
@@ -9,36 +7,27 @@ namespace Algorithm.LengthOfLongestSubstringAlgorithm
     {
         public static int LengthOfLongestSubstring(string s)
         {
-            // record the characters that appear.
-            HashSet<Char> oldCharContainer = new HashSet<char>();
-
-            int n = s.Length;
-            // right point, the initial value is -1, equivalent to no move
-            int rk = -1, result = 0;
-            for (int i = 0; i < n; i++)
+            HashSet<char> letter = new HashSet<char>();
+            int left = 0, right = 0;
+            int length = s.Length;
+            int count = 0, max = 0;
+            while (right < length)
             {
-                if (i != 0)
+                if (!letter.Contains(s[right]))
                 {
-                    // the left pointer moves one space to the right to remove a character
-                    oldCharContainer.Remove(s.ElementAt(i - 1));
+                    letter.Add(s[right]);
+                    right++;
+                    count++;
                 }
-
-                while (rk + 1 < n && !oldCharContainer.Contains(s.ElementAt(rk + 1)))
+                else
                 {
-                    // keep moving the right pointer
-                    oldCharContainer.Add(s.ElementAt(rk + 1));
-                    rk++;
+                    letter.Remove(s[left]);
+                    left++;
+                    count--;
                 }
-                // the characters I through Rk are an extremely long non-repeating character substring
-                Console.WriteLine("");
-                foreach (var item in oldCharContainer)
-                {
-                    Console.Write(item + ",");
-                }
-                result = Math.Max(result, rk - i + 1);
+                max = Math.Max(max, count);
             }
-
-            return result;
+            return max;
         }
     }
 }
