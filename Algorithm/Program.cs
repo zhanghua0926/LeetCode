@@ -1,4 +1,5 @@
-﻿using Algorithm.SumOfTwoNumAlgorithm;
+﻿using Algorithm.LengthOfLongestSubstringAlgorithm;
+using Algorithm.SumOfTwoNumAlgorithm;
 using System;
 
 namespace Algorithm
@@ -10,7 +11,8 @@ namespace Algorithm
             //Console.WriteLine("Hello World!");
 
             //GetSumOfTwoNum();
-            GetBreakfastNumber();
+            //GetBreakfastNumber();
+            GetLengthOfLongestSubstring();
         }
 
         private static void GetSumOfTwoNum()
@@ -33,6 +35,13 @@ namespace Algorithm
             long y = 9;
 
             int result = new BreakfastNumberAlgorithm.BreakfastNumberSolution().BreakfastNumber(num1, num2, x);
+        }
+
+        private static void GetLengthOfLongestSubstring()
+        {
+            string string1 = "pwwkew";
+
+            int result = LengthOfLongestSubstringSolution.LengthOfLongestSubstring(string1);
         }
     }
 }
