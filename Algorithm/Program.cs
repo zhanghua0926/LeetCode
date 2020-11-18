@@ -49,7 +49,10 @@ namespace Algorithm
             ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
             ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
 
-            ListNode result = AddTwoNumbersSolution.AddTwoNumbers(l1, l2);
+            ListNode l3 = new ListNode(3, new ListNode(7));
+            ListNode l4 = new ListNode(9, new ListNode(2));
+
+            ListNode result = AddTwoNumbersSolution.AddTwoNumbers(l3, l4);
         }
     }
 }
