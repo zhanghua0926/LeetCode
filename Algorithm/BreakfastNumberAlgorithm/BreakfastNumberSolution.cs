@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithm.BreakfastNumberAlgorithm
+namespace Algorithm
 {
     public class BreakfastNumberSolution
     {

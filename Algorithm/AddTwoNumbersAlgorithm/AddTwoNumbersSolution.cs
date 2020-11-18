@@ -1,4 +1,4 @@
-﻿namespace Algorithm.AddTwoNumbersAlgorithm
+﻿namespace Algorithm
 {
     public static class AddTwoNumbersSolution
     {

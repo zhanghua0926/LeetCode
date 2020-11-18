@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithm.LengthOfLongestSubstringAlgorithm
+namespace Algorithm
 {
     public static class LengthOfLongestSubstringSolution
     {

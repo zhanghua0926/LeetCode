@@ -1,7 +1,4 @@
-﻿using Algorithm.AddTwoNumbersAlgorithm;
-using Algorithm.LengthOfLongestSubstringAlgorithm;
-using Algorithm.SumOfTwoNumAlgorithm;
-using System;
+﻿using System;
 
 namespace Algorithm
 {
@@ -12,7 +9,8 @@ namespace Algorithm
             //GetSumOfTwoNum();
             //GetBreakfastNumber();
             //GetLengthOfLongestSubstring();
-            GetAddTwoNumbers();
+            //GetAddTwoNumbers();
+            GetLongestPalindromeSolution();
         }
 
         private static void GetSumOfTwoNum()
@@ -34,7 +32,7 @@ namespace Algorithm
             long[] num4 = new long[] { 8, 5, 9, 1 };
             long y = 9;
 
-            int result = new BreakfastNumberAlgorithm.BreakfastNumberSolution().BreakfastNumber(num1, num2, x);
+            int result = new BreakfastNumberSolution().BreakfastNumber(num1, num2, x);
         }
 
         private static void GetLengthOfLongestSubstring()
@@ -53,6 +51,13 @@ namespace Algorithm
             ListNode l4 = new ListNode(9, new ListNode(2));
 
             ListNode result = AddTwoNumbersSolution.AddTwoNumbers(l3, l4);
+        }
+
+        private static void GetLongestPalindromeSolution()
+        {
+            string s = "babad";
+
+            string result = LongestPalindromeSolution.LongestPalindrome(s);
         }
     }
 }

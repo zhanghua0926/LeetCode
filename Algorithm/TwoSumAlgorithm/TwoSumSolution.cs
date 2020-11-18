@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithm.SumOfTwoNumAlgorithm
+namespace Algorithm
 {
     public static class TwoSumSolution
     {
